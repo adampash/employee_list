@@ -11,16 +11,20 @@ const Employee = (props) => {
   // level (like I've done below). A lot of times, for readability, I'll do:
   // const { cell, email, name, picture } = props.person
   // const { thumbnail } = picture
-  const { cell, email, name, picture: { thumbnail } } = props.person
+  const { cell, email, name, picture: { medium } } = props.person
   return (
     <div className="employee">
-      <img src={ thumbnail } />
-      <div className="name">{ fullName(name) }</div>
-      <div className="email">
-        <a href="mailto:{ email }" target="_blank">{ email }</a>
+      <div className="avatar">
+        <img src={ medium } />
       </div>
-      <div className="cell">
-        { cell }
+      <div className="info">
+        <div className="name">{ fullName(name) }</div>
+        <div className="email">
+          <a href={`mailto:${email}`} target="_blank">{ email }</a>
+        </div>
+        <div className="cell">
+          { cell }
+        </div>
       </div>
     </div>
   )
