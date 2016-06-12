@@ -13,7 +13,7 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 # TODO
 
 - [x] Set up boilerplate
-- [ ] Build out front end with local mock data
+- [x] Build out front end with local mock data
 - [ ] Build out backend to access randomuser API
 - [ ] Refactor front end to use backend API
 - [ ] Make it look not awful
