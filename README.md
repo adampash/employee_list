@@ -17,6 +17,6 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 - [x] Build out backend to access randomuser API
   - [x] Create a module to access the randomuser API and return results with front end requirements
   - [x] Hook controller into UserAPI module
-- [ ] Refactor front end to use backend API
+- [x] Refactor front end to use backend API
 - [ ] Make it look not awful
 - [ ] Add filtering and pagination
