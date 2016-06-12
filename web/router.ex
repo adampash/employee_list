@@ -11,6 +11,7 @@ defmodule EmployeeList.Router do
 
   pipeline :api do
     plug :accepts, ["json"]
+    get "/employees", EmployeeList.EmployeeController, :index
   end
 
   scope "/", EmployeeList do
