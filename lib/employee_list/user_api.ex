@@ -3,7 +3,7 @@ defmodule EmployeeList.UserAPI do
 
   @user_api "https://randomuser.me/api/"
   @expected_fields ~w(
-    cell email name picture
+    id cell email name picture
   )
 
   # This is a simple API to request page, no. of results, and a seed—just
