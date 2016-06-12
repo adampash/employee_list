@@ -1,2 +1,82 @@
-body {
+// Setting box-sizing to border-box solves SO many
+// frustrating CSS problems. I tend to add it to nearly
+// every project.
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+// I use flexbox a lot in my projects. I know it's new-ish, but I've
+// fallen in love with it. Of course I still float things and do use
+// block/inline-block/inline/etc., but honestly, flex has made
+// styling user interaces a lot less painful.
+#root {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.employees {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 800px;
+  width: 100%;
+}
+
+.employee {
+  display: flex;
+  flex: 1 1 50%;
+  flex-direction: row;
+  padding: 10px;
+
+  &:hover {
+    background: rgb(241, 237, 237);
+  }
+
+  .info {
+    .name {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 1px;
+      // The randomuser.me api returns usernames in all lowercase, and this
+      // is the quickest/easiest way to deal with that.
+      text-transform: capitalize;
+    }
+
+    .cell,
+    .email {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    .email {
+      & a {
+        color: black;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .avatar {
+    height: 72px;
+    margin-right: 10px;
+    width: 72px;
+  }
+}
+@import 'mobile'
