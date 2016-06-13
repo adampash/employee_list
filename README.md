@@ -1,6 +1,7 @@
 # EmployeeList
+If you don't want to run it locally, I've deployed it [here](https://employeelist.io.adampash.com).
 
-To run locally:
+If you _do_ want to run it locally, clone it, then:
 
 ```bash
 # cd to project directory
@@ -26,4 +27,4 @@ You'll notice I didn't add any filtering or pagination. The backend is all ready
 
 I've also deployed it [here](https://employeelist.io.adampash.com) if you just want to see it without putting it on your machine (I don't know if you've got Elixir already installed for the purpose).
 
-To be perfectly honest, I actually forgot to check in my code when I refactored the front end to use the back end, so if the commit times look off, that's probably it.
+To be perfectly honest, I actually forgot to check in my code when I refactored the front end to use the back end, so if the commit times look off, that's probably it. (That said, I also think I worked it all out, so commits should be clean.)
